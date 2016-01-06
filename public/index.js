@@ -6,9 +6,9 @@ $(function() {
       console.log("Body:", body);
       var value = parseFloat(body);
       if(value > 0.0) {
-        $("body").removeClass("red").addClass("green");
+        $("html, body").removeClass("red").addClass("green");
       } else {
-        $("body").removeClass("green").addClass("red");
+        $("html, body").removeClass("green").addClass("red");
       }
     });
   }, 200);
