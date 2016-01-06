@@ -27,11 +27,12 @@ app.post('/activity/', function (req, res) {
   //console.log("Got a post request:")
   //console.log(req.body);
   console.log("Changes:", req.body.numberOfChanges);
+  count = parseInt(req.body.numberOfChanges);
 
-  setLedState(1);
+  setLedState(255);
   setTimeout(function() {
     setLedState(0);
-  }, 1000);
+  }, 200);
   res.end();
 });
 
