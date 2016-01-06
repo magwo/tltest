@@ -18,8 +18,8 @@ var setLedState = function(val) {
   }
 }
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+app.get('/traffic/', function (req, res) {
+  res.send('' + count);
 });
 
 app.post('/activity/', function (req, res) {
