@@ -12,6 +12,7 @@ execSync("echo ");
 
 var setLedState = function(val) {
   try {
+    console.log("Setting led state to " + val);
     execSync("echo 1 >/sys/class/leds/led0/brightness");
   } catch(e) {
     console.error("Could not set LED state to " + val);
